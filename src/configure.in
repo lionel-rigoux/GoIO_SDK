@@ -5,7 +5,8 @@ AC_PROG_CXX
 AC_PROG_LIBTOOL
 AC_PROG_INSTALL
 
-GIO_EXTRA_CFLAGS="-fvisibility=hidden -fvisibility-inlines-hidden"
+GIO_EXTRA_CFLAGS="-fvisibility=hidden -fvisibility-inlines-hidden -std=c++03"
+
 AC_SUBST(GIO_EXTRA_CFLAGS)
 
 GIO_EXTRA_CFLAGS="$GIO_EXTRA_CFLAGS -DTARGET_OS_LINUX -DLIB_NAMESPACE=GoIO"
